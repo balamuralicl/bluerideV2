@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/Balus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1833ebbb85221ccf306fa5b0b9120bc0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "/Users/Balus/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f73ae6b140280eccdd8c1393b0105486/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "372",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "549"
+                    }
+                },
+                {
+                    "source": "/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/res/values-land/dimens.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "43",
+                        "endOffsets": "94"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endColumns": "43",
+                        "endOffsets": "367"
+                    }
+                }
+            ]
+        }
+    ]
+}
