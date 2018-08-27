@@ -4,19 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.americanexpress.developer.rideblue.fragments.AccountFragment;
-import com.americanexpress.developer.rideblue.fragments.HomeFragment;
-import com.americanexpress.developer.rideblue.fragments.NotificationsFragment;
-import com.americanexpress.developer.rideblue.fragments.TripsFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -33,7 +25,7 @@ import com.google.android.gms.tasks.Task;
  * profile, which also adds a request dialog to access the user's Google Drive.
  */
 public class SignInActivityWithDrive extends AppCompatActivity implements
-        View.OnClickListener,BottomNavigationView.OnNavigationItemSelectedListener {
+        View.OnClickListener {
 
     private static final String TAG = "SignInActivity";
     private static final int RC_SIGN_IN = 9003;
@@ -41,22 +33,11 @@ public class SignInActivityWithDrive extends AppCompatActivity implements
     private GoogleSignInClient mGoogleSignInClient;
 
     private TextView mStatusTextView;
-    private TextView mTextMessage;
-    private FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // this is to load fragment
-        //loading the default fragment
-        loadFragment(new AccountFragment());
-
-        BottomNavigationView bnv = (BottomNavigationView) findViewById(R.id.navigation);
-
-        bnv.setOnNavigationItemSelectedListener(this);
 
         // Views
         mStatusTextView = findViewById(R.id.status);
@@ -213,43 +194,5 @@ public class SignInActivityWithDrive extends AppCompatActivity implements
                 revokeAccess();
                 break;
         }
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        Fragment fragment = null;
-        switch (item.getItemId()) {
-
-
-            case R.id.navigation_account:
-
-                fragment = new AccountFragment();
-                break;
-
-            case R.id.navigation_trips:
-                fragment = new TripsFragment();
-                break;
-
-            case R.id.navigation_notifications:
-
-                fragment = new NotificationsFragment();
-                break;
-
-
-        }
-
-        return loadFragment(fragment);
-
-    }
-    private boolean loadFragment(Fragment fragment) {
-        //switching fragment
-        if (fragment != null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.fragment_container, fragment)
-                    .commit();
-            return true;
-        }
-        return false;
     }
 }

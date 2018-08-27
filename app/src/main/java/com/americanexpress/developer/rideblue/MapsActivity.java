@@ -56,12 +56,13 @@ public class MapsActivity extends AppCompatActivity
         setContentView(R.layout.activity_maps);
         Log.i("In Maps activity", "create");
 
-        Intent intent = new Intent(this, com.americanexpress.developer.rideblue.BottomNavigation.class);
+        Intent intent = new Intent(this, com.americanexpress.developer.rideblue.SignInActivityWithDrive.class);
         startActivityForResult(intent, REQUEST_CODE);
 
-        SupportMapFragment mapFragment =
-                (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        Intent intent2 = new Intent(this, com.americanexpress.developer.rideblue.BottomNavigation.class);
+        startActivityForResult(intent2, REQUEST_CODE);
+
+
     }
 
     @Override
