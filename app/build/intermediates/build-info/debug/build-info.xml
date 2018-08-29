@@ -5,26 +5,27 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
+    ir-eligibility="FIELD_ADDED"
     plugin-version="3.1.4"
-    timestamp="1535521923074"
+    timestamp="1535522939267"
     token="7395772833414806777"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="487" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="27" />
     <task
         name="verifier"
-        duration="0" />
+        duration="5" />
 
     <artifact
-        location="/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        location="/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
 
     <build
@@ -119,9 +120,6 @@
             location="/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
     </build>
@@ -131,6 +129,15 @@
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1535522939267"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/Balus/AndroidStudioProjects/BaluRideBlue/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
     </build>
 

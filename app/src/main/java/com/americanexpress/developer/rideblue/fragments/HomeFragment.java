@@ -3,6 +3,9 @@ package com.americanexpress.developer.rideblue.fragments;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -20,6 +23,8 @@ import com.americanexpress.developer.rideblue.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,12 +33,18 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import static android.content.Context.LOCATION_SERVICE;
 
 public class HomeFragment extends Fragment implements OnMapReadyCallback {
     MapView mapView;
     GoogleMap map;
     SupportMapFragment mapFragment;
+    private GoogleApiClient googleApiClient;
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
+    double latitude;
+    double longitude;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -159,8 +170,35 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         googleMap.getUiSettings().setMyLocationButtonEnabled(false);
         checkLocationPermission();
         googleMap.setMyLocationEnabled(true);
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(43.1, -87.9), 10);
-        googleMap.animateCamera(cameraUpdate);
+        /*CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(43.1, -87.9), 10);
+        googleMap.animateCamera(cameraUpdate);*/
+
+        //* to get current position
+
+
+        Location location = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
+        latitude  = location.getLatitude();
+        longitude = location.getLongitude();
+        moveMap();
+
+    }
+
+    public void moveMap() {
+        /**
+         * Creating the latlng object to store lat, long coordinates
+         * adding marker to map
+         * move the camera with animation
+         */
+        LatLng latLng = new LatLng(latitude, longitude);
+        map.addMarker(new MarkerOptions()
+                .position(latLng)
+                .draggable(true)
+                .title("My Location"));
+
+        map.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+        map.animateCamera(CameraUpdateFactory.zoomTo(15));
+        map.getUiSettings().setZoomControlsEnabled(true);
+
 
     }
 
