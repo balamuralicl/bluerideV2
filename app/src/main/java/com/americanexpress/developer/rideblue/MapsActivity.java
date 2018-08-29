@@ -5,20 +5,16 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnMyLocationButtonClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMyLocationClickListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -49,6 +45,7 @@ public class MapsActivity extends AppCompatActivity
 
     private GoogleMap mMap;
     public static final int REQUEST_CODE = 1;
+    Boolean checkUser = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,11 +53,28 @@ public class MapsActivity extends AppCompatActivity
         setContentView(R.layout.activity_maps);
         Log.i("In Maps activity", "create");
 
+
+        // to do signIN
         Intent intent = new Intent(this, com.americanexpress.developer.rideblue.SignInActivityWithDrive.class);
         startActivityForResult(intent, REQUEST_CODE);
 
-        Intent intent2 = new Intent(this, com.americanexpress.developer.rideblue.BottomNavigation.class);
-        startActivityForResult(intent2, REQUEST_CODE);
+
+        checkUser = checkForUserDetails();
+        if(checkUser) {
+
+            // this intent only if we are missing user details like address and car
+            Log.i("came here", "willcall intent");
+
+            Intent intent2 = new Intent(this, com.americanexpress.developer.rideblue.RequestUserDetails.class);
+            startActivityForResult(intent2, REQUEST_CODE);
+        }
+
+
+
+
+        // For all the bottom navigation options
+        Intent intent3 = new Intent(this, com.americanexpress.developer.rideblue.BottomNavigation.class);
+        startActivityForResult(intent3, REQUEST_CODE);
 
 
     }
@@ -86,6 +100,7 @@ public class MapsActivity extends AppCompatActivity
 
     @Override
     public void onMapReady(GoogleMap map) {
+        Log.i("In Maps activity", "on map ready");
         mMap = map;
 
         mMap.setOnMyLocationButtonClickListener(this);
@@ -158,7 +173,15 @@ public class MapsActivity extends AppCompatActivity
 //        PermissionUtils.PermissionDeniedDialog
 //                .newInstance(true).show(getSupportFragmentManager(), "dialog");
         Toast.makeText(this, "Location Access Denied" , Toast.LENGTH_LONG).show();
+        Log.i("In Maps activity", "access denied");
 
+    }
+
+    public boolean checkForUserDetails(){
+        //to do
+
+        Log.i("came here", "returned true");
+        return true;
     }
 
 }

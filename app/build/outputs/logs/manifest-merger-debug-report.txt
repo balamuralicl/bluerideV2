@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
+ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/0c3a797fd90aa7625b243b72adc0b692/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.1] /Users/Balus/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f73ae6b140280eccdd8c1393b0105486/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/Balus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1833ebbb85221ccf306fa5b0b9120bc0/AndroidManifest.xml:17:1-22:12
@@ -31,20 +31,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Balus/.gradle/ca
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c8c788a66e395c2e01c9935faf887c8d/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/560b2ba5644814e8d273d465e02b9543/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c0ded0d772f2b9a3539c094d2cc32d2b/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:3:5-53
 		INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
 		INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-55:12
 		INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:11-69
@@ -57,7 +57,7 @@ ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:11:22-78
 application
-ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:13:5-52:19
+ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:13:5-53:19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/0c3a797fd90aa7625b243b72adc0b692/AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/0c3a797fd90aa7625b243b72adc0b692/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-auth:16.0.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/03f09d00c8a3da6d0aa94afb850f146c/AndroidManifest.xml:22:5-37:19
@@ -85,7 +85,7 @@ MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/Balus/
 	android:theme
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:17:9-40
 activity#com.americanexpress.developer.rideblue.SignInActivityWithDrive
-ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:18:9-21:78
+ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:18:9-21:69
 	android:label
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:20:13-58
 	android:theme
@@ -121,11 +121,15 @@ ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:46:13-50
 activity#com.americanexpress.developer.rideblue.BottomNavigation
-ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:49:9-51:81
+ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:49:9-51:72
 	android:label
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:51:13-69
 	android:name
 		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:50:13-45
+activity#com.americanexpress.developer.rideblue.RequestUserDetails
+ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:52:9-65
+	android:name
+		ADDED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:52:19-53
 uses-sdk
 INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml

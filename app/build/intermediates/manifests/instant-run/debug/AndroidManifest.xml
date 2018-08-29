@@ -65,6 +65,7 @@
         <activity
             android:name="com.americanexpress.developer.rideblue.BottomNavigation"
             android:label="@string/title_activity_bottom_navigation" />
+        <activity android:name="com.americanexpress.developer.rideblue.RequestUserDetails" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

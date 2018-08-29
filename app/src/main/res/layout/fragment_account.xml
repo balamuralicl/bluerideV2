@@ -4,7 +4,7 @@
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@drawable/gradient"
     android:paddingBottom="20dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
@@ -31,9 +31,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="10dp"
+            android:textSize="20dp"
             android:textStyle="bold|italic"
-            android:textColor="@color/colorNavText"
+            android:textColor="@color/lightBlue"
             android:layout_marginTop="80dp" />
 
         <android.widget.TextView
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="10dp"
+            android:textSize="20dp"
             android:textStyle="bold|italic"
             android:textColor="@color/colorNavText"
             android:layout_marginTop="20dp">

@@ -36,6 +36,7 @@ public class SignInActivityWithDrive extends AppCompatActivity implements
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("in sign","inten1");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

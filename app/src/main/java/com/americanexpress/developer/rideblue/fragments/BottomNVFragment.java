@@ -34,3 +34,4 @@ public class BottomNVFragment extends Fragment {
         return scroller;
     }
 }
+

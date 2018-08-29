@@ -1,21 +1,72 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_layout"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_grey_700"
-    android:orientation="vertical"
-    android:weightSum="4"
-    tools:context=".fragments.HomeFragment">
-    <android.widget.TextView
-        android:id="@+id/navigation_home"
-        android:hint="@string/user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
-        android:textColor="@color/colorNavText"
-        android:layout_marginTop="80dp" />
+    android:background="@drawable/gradient"
+    android:id="@+id/container">
 
-</LinearLayout>
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map" />
+
+    <RadioGroup
+        android:checkedButton="@+id/rideoff"
+        android:id="@+id/ridetoggle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toTopOf="@id/container"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/lighterBlue"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/offer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/ride_offer"
+            android:textColor="@android:color/background_dark" />
+
+        <RadioButton
+            android:id="@+id/rideoff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/ride_off"
+            android:textColor="@android:color/background_dark" />
+
+        <RadioButton
+            android:id="@+id/request"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/ride_request"
+            android:textColor="@android:color/background_dark" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

@@ -18,7 +18,7 @@
         <activity
             android:name=".SignInActivityWithDrive"
             android:label="@string/name_sign_in_activity"
-            android:theme="@style/ThemeOverlay.MyNoTitleActivity"></activity>
+            android:theme="@style/ThemeOverlay.MyNoTitleActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -48,7 +48,8 @@
 
         <activity
             android:name=".BottomNavigation"
-            android:label="@string/title_activity_bottom_navigation"></activity>
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity android:name=".RequestUserDetails"></activity>
     </application>
 
 </manifest>
