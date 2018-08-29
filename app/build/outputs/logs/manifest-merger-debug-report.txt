@@ -5,7 +5,6 @@ INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/Andro
 INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-56:12
 INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml:2:1-56:12
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/0c3a797fd90aa7625b243b72adc0b692/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:multidex:1.0.2] /Users/Balus/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/adab8729bddcc342d0fcd447f977f692/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:design:27.1.1] /Users/Balus/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f73ae6b140280eccdd8c1393b0105486/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/Balus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1833ebbb85221ccf306fa5b0b9120bc0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.0.aar/03f09d00c8a3da6d0aa94afb850f146c/AndroidManifest.xml:17:1-39:12
@@ -137,8 +136,6 @@ INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/Andro
 INJECTED from /Users/Balus/AndroidStudioProjects/BaluRideBlue/app/src/main/AndroidManifest.xml
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/0c3a797fd90aa7625b243b72adc0b692/AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Balus/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/0c3a797fd90aa7625b243b72adc0b692/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:multidex:1.0.2] /Users/Balus/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/adab8729bddcc342d0fcd447f977f692/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.2] /Users/Balus/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/adab8729bddcc342d0fcd447f977f692/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:27.1.1] /Users/Balus/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f73ae6b140280eccdd8c1393b0105486/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:27.1.1] /Users/Balus/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/f73ae6b140280eccdd8c1393b0105486/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/Balus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1833ebbb85221ccf306fa5b0b9120bc0/AndroidManifest.xml:20:5-44
