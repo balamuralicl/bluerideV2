@@ -45,11 +45,12 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+        <activity android:name=".RequestUserDetails"></activity>
 
         <activity
             android:name=".BottomNavigation"
             android:label="@string/title_activity_bottom_navigation" />
-        <activity android:name=".RequestUserDetails"></activity>
+
     </application>
 
 </manifest>

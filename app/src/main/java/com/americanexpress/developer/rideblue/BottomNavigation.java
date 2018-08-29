@@ -1,6 +1,7 @@
 
 package com.americanexpress.developer.rideblue;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -24,6 +25,8 @@ import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 
+import static com.americanexpress.developer.rideblue.MapsActivity.REQUEST_CODE;
+
 public class BottomNavigation extends AppCompatActivity implements
         BottomNavigationView.OnNavigationItemSelectedListener,
         OnMapReadyCallback
@@ -37,12 +40,24 @@ public class BottomNavigation extends AppCompatActivity implements
     GoogleSignInAccount account;
     HomeFragment mapFragment;
     Bundle data ;
+    Boolean checkUser = false;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("in bottom","inten2");
+
+        checkUser = checkForUserDetails();
+        if(checkUser) {
+
+            // this intent only if we are missing user details like address and car
+            Log.i("came here", "willcall intent");
+
+            Intent intent2 = new Intent(this, com.americanexpress.developer.rideblue.RequestUserDetails.class);
+            startActivityForResult(intent2, REQUEST_CODE);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation);
 
@@ -187,6 +202,23 @@ public class BottomNavigation extends AppCompatActivity implements
     public void onMapReady(GoogleMap googleMap) {
 
     }
+
+    public boolean checkForUserDetails(){
+        //to do
+
+        Log.i("came here", "returned true");
+        return true;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if ( requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
+            // to do
+        }
+    }
+
 
   /*  @Override
     public void onRequestPermissionsResult(int requestCode,

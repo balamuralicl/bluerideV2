@@ -59,7 +59,7 @@ public class MapsActivity extends AppCompatActivity
         startActivityForResult(intent, REQUEST_CODE);
 
 
-        checkUser = checkForUserDetails();
+      /*  checkUser = checkForUserDetails();
         if(checkUser) {
 
             // this intent only if we are missing user details like address and car
@@ -67,7 +67,7 @@ public class MapsActivity extends AppCompatActivity
 
             Intent intent2 = new Intent(this, com.americanexpress.developer.rideblue.RequestUserDetails.class);
             startActivityForResult(intent2, REQUEST_CODE);
-        }
+        }*/
 
 
 
